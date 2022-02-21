@@ -1,14 +1,13 @@
 import express from 'express';
+import 'reflect-metadata';
+import './database';
+import { router } from './routes';
 
 const app = express();
 
-app.get('/', (request, response) => {
-  return response.send('Hello World');
-});
+app.use(express.json());
 
-app.post('/', (request, response) => {
-  return response.send('Hello World');
-});
+app.use(router);
 
 const PORT = 3000;
 app.listen(PORT, () => {
