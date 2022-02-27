@@ -1,6 +1,6 @@
 # Valoriza
 
-### Rules of the project
+### Rules
 
 - Creating a user  
   [x] E-mail field cannot be empty  
